@@ -1,0 +1,236 @@
+/* *** */
+/*1. Réglages généraux pour homepage.html */
+/* *** */
+
+/* Police principale */
+* {
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Liens */
+a {
+    text-decoration: none;
+    color:#788289;
+    transition: 0.3s;
+}
+
+/* Réaction des liens au survol */
+a:hover {
+    color:#484e52;
+}
+/* Hauteur de la page (permet de coller le footer en pied-de-page */
+html {
+    height: 100%;
+}
+
+/* Réglages généraux sur <body>; réglages de min-height et flex pour coller le footer en pied-de-page */
+body {
+    min-height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    align-content: space-between;
+}
+
+/* *** */
+/* 2. Header */
+/* *** */
+
+/* Div top-header et header-image en colonne */
+header {
+    display: flex;
+    flex-flow: column;
+}
+
+/* Logo et menu sur la même ligne avec espacement max. z-index et box-shadow pour l'ombre portée du menu sur la bannière  */
+#top-header {
+    z-index: 1;
+    display: flex;
+    flex-flow : row wrap;
+    justify-content: space-between;
+    font-size: 0.8em;
+    font-weight:600;
+    color:#788289;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.1);
+}
+
+/* Menu sans chiffrage et avec marge */
+nav ol li {
+    margin: 1.5em 1.5em 1em 0;
+    list-style-type:none;
+}
+
+/* Liste du menu sur une seule ligne */
+ol {
+    display: flex;
+    flex-flow: row;
+ }
+
+/* Présentation du logo avec espacement des caractères */
+ .logo {
+    margin: 1.5em 0 1.5em 1em;
+    letter-spacing: 0.5em;
+ }
+
+/* Image de bannière en fond de la div header-image */
+#header-image {
+    background-image: url(img/building.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    height: 400px;
+}
+
+ /* Titre principal centré sur la photo de bannière */
+ #header-image h1 {
+    color: #ffffff;
+    font-size: 5em;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    line-height: 5em;
+ }
+
+ /* *** */
+ /* 3. Contenu principal de la page */
+/* *** */
+
+ /* Marges à gauche et droite de maint-content et alignement au centre */
+ #main-content {
+    width: 90%;
+    margin: 0 auto 4em auto;
+ }
+
+ /* Titre secondaire */
+ #main-content h2 {
+    margin: 1em 0 1em 0;
+    font-size: 1em;
+    font-weight:600;
+    color:#788289;
+ }
+
+ /* Ligne séparatrice entre titre et contenu */
+h2+hr{
+    margin-bottom: 1.5em;
+    border: 0.5px solid #788289;
+}
+
+/* Alignement des 3 div avec les bio des fondateurs */
+#main-content #founder-articles {
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+/* Réduction de la taille des div founderArticle */
+#founder-articles .founderArticle {
+    width: 25%;
+}
+
+/* Marge sous l'image de l'article */
+#founder-articles .founderArticle img {
+    margin-bottom: 0.5em;
+    width: 100%;
+}
+
+/* Marge sous le titre de l'article */
+#founder-articles .founderArticle h3 {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+/* Contenu de l'article tronqué pour qu'il ne dépasse pas deux lignes */
+#founder-articles .founderArticle p {
+    overflow: hidden;
+    margin-bottom: 0.5em;
+    color: #788289;
+    font-size: 0.8em;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+/* Lien "Lire la suite" */
+#founder-articles .founderArticle .readMore {
+    background-color: #F1F1F1;
+    padding: 0.5em 0 0.5em 0;
+    text-align: center;
+}
+
+/* Zone grise de "Lire la suite" cliquable comme lien */
+#founder-articles .founderArticle .readMore a {
+    display: block;
+    font-family:Arial, Helvetica, sans-serif !important ;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+/* *** */
+/* 4. Footer */
+/* *** */
+
+/* Apparence du footer */
+footer {
+    padding: 0.5em 0 0.5em 0;
+    background-color: #F1F1F1;
+    width: 100%;
+}
+
+/* Texte dans le footer */
+footer p {
+    text-align: center;
+    color:#788289;
+    font-size: 0.8em;
+}
+
+/* *** */
+/* 5. Affichage responsive */
+/* *** */
+
+/* A. Ecrans type tablette */
+
+/* Réduction de la hauteur de l'image du header */
+@media screen and (max-width: 800px) {
+    #header-image {
+        height: 200px;
+    }
+
+/* Réduction et recentrage du titre sur l'image */
+    #header-image h1 {
+    font-size: 3em;
+    line-height: 4em;
+ }
+
+ /* Changement de présentation des articles */
+ #main-content #founder-articles {
+    display: flex; 
+    flex-flow: column wrap;
+    gap: 2em;
+}
+
+/* Augmentation de la taille des articles */
+#main-content #founder-articles .founderArticle {
+    width: 80%;
+    margin: auto;
+}
+
+}
+
+/* B. Ecran type smartphone */
+
+@media screen and (max-width: 420px) {
+
+/* Réduction de la hauteur de l'image du header */
+    #header-image {
+        height: 100px;
+    }
+
+/* Réduction et recentrage du titre sur l'image */
+    #header-image h1 {
+    font-size: 2em;
+    line-height: 3em;
+ }
+
+}

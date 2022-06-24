@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    height: 50vh;
+    background: url(../img/IMG_0074.jpeg) no-repeat center center;
+    background-size : cover;
+    align-items: center;
+    justify-content: center;
+}
+
+section div div {
+    width: 150px;
+    height: 150px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}

@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    background-color: rgb(102, 198, 228);
+}
+
+.container {
+    width: 80%;
+    border: 2px solid rgb(85, 56, 29);
+    margin: 1em auto;
+}
+
+.container .row {
+    display: flex;
+}
+
+.container .col_4 {
+    width: 33.333333%;
+    height: 2em;
+    line-height: 2em;
+}
+
+.bleu {
+    background-color: rgb(44, 80, 197);
+}
+
+.rose {
+    background-color: rgb(228, 150, 157);
+}
+
+.vert {
+    background-color: rgb(13, 121, 79);
+}
+
+section {
+    justify-content: space-around;
+}
+
+.test {
+    width: 150px;
+    height: 150px;
+    line-height:140px;
+    font-size: 2em;
+    font-style:italic;
+}
+
+.test:hover {
+    font-style:unset;
+    cursor:pointer;
+}

@@ -1,0 +1,39 @@
+/* Commentaire en CSS */
+
+* {
+    text-align: right;
+}
+
+body {
+    background-color: lightgray;
+}
+
+header{
+    background-color: darkblue;
+    color: whitesmoke;
+    height: 100px;
+}
+
+nav{
+    background-color: orange;
+    height: 50px;
+}
+
+section{
+    background-color: blueviolet;
+    height: 550px;
+}
+
+nav, footer{
+    color: yellow;
+}
+
+h1 + p {
+    background-color: crimson;
+}
+
+#noir {
+    background-color: black;
+    color: whitesmoke;
+    font-size: 25px;
+}

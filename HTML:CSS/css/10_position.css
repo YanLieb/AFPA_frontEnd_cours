@@ -1,0 +1,30 @@
+nav {
+    background-color: #4141ff;
+    color:white;
+    width: 100%;
+    text-align: center;
+    position: fixed; /* maintient une zone toujours affichée, très utile pour la barre de navigation par exemple */
+    top: 0; /* positionné à 0 pixels du haut*/
+    left: 0; /* positionné à 0 pixels de la gauche */
+}
+
+#zone {
+    border: 2px solid #ad1d1d;
+}
+
+.vert {
+    position: absolute;
+    background-color: #52b852;
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+    top: 50%;
+    left: 0;
+}
+
+.red {
+    color: rgb(255, 75, 75);
+    position: relative;
+    left: 50%;
+    top: -30px;
+}

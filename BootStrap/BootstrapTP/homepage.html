@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CDN Bootstrap général -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CDN Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- CSS perso -->
+    <link rel="stylesheet" href="/Langages_presentation/BootStrap/BootstrapTP/homepage.css">
+    <title>Bootstrap TP</title>
+</head>
+
+<body>
+
+    <!-- En-tête avec logo, menu et bannière -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Salma Felouki</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#a-propos">À propos</a>
+                        <a class="nav-link" href="#competences">Compétences</a>
+                        <a class="nav-link" href="#realisations">Réalisations</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- À propos, avec image thumbnail à gauche et texte avec titre et bouton CV à droite -->
+    <div class="container-fluid pt-5 pb-5 bg-light">
+        <div id="a-propos" class="container bg-light">
+            <div class="row flex-column-reverse flex-lg-row justify-content-between align-items-center">
+                <div class="col-6 col-lg-5"><img src="/Langages_presentation/BootStrap/BootstrapTP/img/development.png"
+                        class="img-fluid"
+                        alt="Illustration d'un homme face à un ordinateur en 3D isométrique avec des icônes de langages de programmation flottant derrière l'écran">
+                </div>
+                <div class="col-12 col-lg-5 mb-3">
+                    <h2 class="text-info">Qui suis-je?</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, veniam cum? Tempore
+                        distinctio
+                        ipsa, consectetur debitis, atque voluptas necessitatibus in, id numquam tempora porro?
+                        Possimus
+                        itaque impedit at tempore aspernatur natus eum est vitae consectetur voluptas fugit,
+                        perferendis
+                        soluta labore!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium blanditiis laboriosam
+                        omnis
+                        debitis
+                        perspiciatis maxime saepe esse voluptatem impedit sit!</p>
+                    <button type="button" class="btn btn-primary">Télécharger mon CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mes Compétences, deux colonnes, barres de progression -->
+    <div id="competences" class="container pt-5 pb-5">
+        <h2 class="text-info text-center pb-4">Mes Compétences</h2>
+
+        <div class="row justify-content-between text-black-50">
+
+            <div class="col-12 col-md-5">
+                <h3 class="pb-3">Front</h3>
+                <h4 class="pt-1 fs-5">HTML/CSS</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="pt-1 fs-5">Javascript</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="pt-1 fs-5">Angular</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="pt-1 fs-5">VueJS</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-5">
+                <h3 class="pb-3">Back</h3>
+                <h4 class="pt-1 fs-5">PHP</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="pt-1 fs-5">SQL</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="pt-1 fs-5">Symphony</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h4 class="pt-1 fs-5">NodeJS</h4>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Réalisations, avec cartes alignées -->
+    <div class="container-fluid bg-light">
+        <div id="realisations" class="container pt-5 pb-5 bg-light">
+            <h2 class="text-info text-center pb-5">Mes réalisations</h2>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card w-100">
+                        <img src="/Langages_presentation/BootStrap/BootstrapTP/img/store.png" class="card-img-top px-2"
+                            alt="Illustration d'une devanture de magasin avec un avion en papier qui s'envole vers la gauche">
+                        <div class="card-body">
+                            <h5 class="card-title">Site WordPress</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the
+                                bulk
+                                of
+                                the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card w-100">
+                        <img src="/Langages_presentation/BootStrap/BootstrapTP/img/store.png" class="card-img-top px-2"
+                            alt="Illustration d'une devanture de magasin avec un avion en papier qui s'envole vers la gauche">
+                        <div class="card-body">
+                            <h5 class="card-title">Site PrestaShop</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card w-100">
+                        <img src="/Langages_presentation/BootStrap/BootstrapTP/img/store.png" class="card-img-top px-2"
+                            alt="Illustration d'une devanture de magasin avec un avion en papier qui s'envole vers la gauche">
+                        <div class="card-body">
+                            <h5 class="card-title">Site Symfony</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                    <div class="card w-100">
+                        <img src="/Langages_presentation/BootStrap/BootstrapTP/img/store.png" class="card-img-top px-2"
+                            alt="Illustration d'une devanture de magasin avec un avion en papier qui s'envole vers la gauche">
+                        <div class="card-body">
+                            <h5 class="card-title">Site Symfony</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's
+                                content.</p>
+                            <a href="#" class="btn btn-primary">Voir le site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Formulaire de contact -->
+    <div id="contact" class="container pt-5 pb-5">
+        <h2 class="text-info text-center pb-4">Me contacter</h2>
+        <div class="mb-3">
+            <label for="ContactFormLastNameInput" class="form-label">Nom</label>
+            <input type="text" class="form-control" id="ContactFormLastNameInput" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="ContactFormFirstNameInput" class="form-label">Prénom</label>
+            <input type="text" class="form-control" id="ContactFormFirstNameInput" placeholder="">
+        </div>
+        <div class="mb-3">
+            <label for="ObjectSelect">Objet</label>
+            <select class="form-select" id="ObjectSelect" aria-label="ObjectSelect">
+                <option selected>Autre</option>
+                <option value="1">Proposition d'emploi</option>
+                <option value="2">Demande de devis</option>
+                <option value="3">Formation</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="button" class="btn btn-primary">Envoyer</button>
+    </div>
+
+
+    <!-- Pied-de-page avec icones reseaux sociaux -->
+    <footer class="footer">
+        <div class="container-fluid bg-secondary pb-4 pt-4">
+            <div class="container bg-secondary">
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <ul class="nav fs-4 justify-content-center">
+                            <li class="p-2 nav-item"><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                            <li class="p-2 nav-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li class="p-2 nav-item"><a href="#"><i class="bi bi-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

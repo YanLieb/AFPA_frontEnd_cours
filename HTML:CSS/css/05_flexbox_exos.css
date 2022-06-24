@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* flexbox properties
+display : flex - défines a flex container
+flex-direction - row/column/reverse
+flex-wrap - one line / multiple lines
+flex-flow : direction and wrap
+justify-content : how to place contents in the main axis
+align-items : place contents un the cross axis
+align-content : if more than one line, how to place lines in the container
+gap /row-gap / column-gap : space between items
+*/
+
+.parent {
+    display:flex;
+    height: 300px;
+    width: 100%;
+    margin: auto;
+    background-color: lightgoldenrodyellow;
+    border: 5px dotted lightslategray;
+
+    flex-flow: row wrap;
+    justify-content :space-evenly;
+    align-content:center;
+}
+
+.child {
+    font-weight: bold;
+    color: cadetblue;
+    width: 100px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 3px solid cadetblue;
+    border-radius: 100%;
+    font-size: 4em;
+    text-align: center;
+    line-height: 90px;
+}

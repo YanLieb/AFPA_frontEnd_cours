@@ -1,0 +1,15 @@
+*{
+box-sizing: border-box;
+}
+
+#top-header {
+    display: flex;
+}
+
+.menu ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type : none;
+}

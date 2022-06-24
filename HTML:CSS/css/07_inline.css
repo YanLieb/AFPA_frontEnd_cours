@@ -1,0 +1,13 @@
+h1, h3, div, a, p, span, section {
+    text-align: center;
+    border: 2px solid rgb(194, 45, 45);
+    background-color: rgb(214, 145, 54);
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}

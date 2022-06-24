@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Les couleurs en css">
+    <meta name="author" content="Yannick LIEBNAU">
+    <title>Couleurs en CSS</title>
+
+    <style>
+        #couleursRGB,
+        #couleursHex,
+        #couleursGradient {
+            width: 250px;
+            height: 250px;
+        }
+
+        #couleursHex {
+            background-color: #123456;
+
+        }
+
+        #couleursRGB {
+            background-color: rgba(24, 135, 65, 0.9);
+            /* background: linear-gradient(360deg, #123456, rgba(24, 135, 65, 0.9)); */
+        }
+
+        #couleursGradient {
+            background: linear-gradient(180deg, #123456, rgba(24, 135, 65, 0.9));
+        }
+    </style>
+</head>
+
+<body>
+    <div id="couleursRGB"></div>
+    <div id="couleursHex"></div>
+    <div id="couleursGradient"></div>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+*{
+    box-sizing : border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 50%; /*largeur de ma page : 50% de l'écran*/
+    margin: auto; /*gestion automatique des marges pour mon tableau soit centré*/
+}
+
+table{
+    border: 4px solid blue;
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+thead,tfoot{
+    background-color: lightskyblue;
+}
+
+tbody{
+    border: 1px solid orangered;
+}
+th{
+    border: 1px dotted #6a5acd; /*dotted = pointillés*/
+    padding: 4px;
+    width: 25%;
+}
+
+td{
+    border: 1px dotted #6a5acd;
+    padding: 4px;
+    text-align: center;
+}

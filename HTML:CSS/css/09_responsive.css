@@ -1,0 +1,31 @@
+.zone-adaptative {
+    background-color: #fb5d57;
+    color: #f6f4f4;
+    padding: 10px;
+}
+
+@media (min-width:768px) {
+    .zone-adaptative {
+        background-color: #27b1d3;
+        width: 400px;
+        color: #f8f4f4;
+    }
+
+    .d-flex{
+        display: flex;
+    }
+}
+
+@media (min-width:992px) {
+    .zone-adaptative {
+        background-color: #f88030;
+        width: 970px;
+    }
+}
+
+@media (min-width:1200px) {
+    .zone-adaptative {
+        background-color: #49bd75;
+        width: 1170px;
+    }
+}
